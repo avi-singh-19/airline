@@ -8,7 +8,7 @@ class Airport(models.Model):
     city = models.CharField(max_length=64)
 
     def __str__(self):
-        return f"{self.id}: {self.city} ({self.code})"
+        return f"{self.city} ({self.code})"
 
 
 class Flight(models.Model):
