@@ -21,3 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('flights/', include("flights.urls"))
 ]
+
+# to use admin app:
+# 1) python manage.py createsuperuser
+# 2) provide email address, password, confirm
