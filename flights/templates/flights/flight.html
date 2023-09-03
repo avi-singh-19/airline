@@ -7,4 +7,13 @@
         <li> Destination: {{ flight.destination }}</li>
         <li>{{ flight.origin }} to {{ flight.destination }} duration: {{ flight.duration }} minutes</li>
     </ul>
+
+    <h2>Passengers</h2>
+    <ul>
+        {% for passenger in passengers %}
+            <li>{{ passenger }} boarding</li>
+        {% empty %}
+            <li>No registered passengers boarding</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
